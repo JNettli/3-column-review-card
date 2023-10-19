@@ -1,0 +1,121 @@
+body {
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.big-text {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.main-text {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: white;
+    opacity: 75%;
+    line-height: 25px;
+    margin-bottom: auto;
+}
+
+
+.car-container {
+    height: 500px;
+    max-width: 920px;
+    margin: 8% auto;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+}
+
+.car-logo {
+    height: 40px;
+    margin-right: auto;
+}
+
+.sedan-box {
+    background-color: #E28625;
+    padding: 48px;
+    width: 307px;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.suv-box {
+    background-color: #006971;
+    padding: 48px;
+    width: 307px;
+    display: flex;
+    flex-direction: column;
+}
+
+.luxury-box {
+    background-color: #004140;
+    padding: 48px;
+    width: 307px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-more-sedan {
+    background-color: #fff;
+    color: #E28625;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    border-radius: 25px;
+    height: 48px;
+    width: 146px;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.learn-more-suv {
+    background-color: #fff;
+    color: #006971;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    border-radius: 25px;
+    height: 48px;
+    width: 146px;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.learn-more-luxury {
+    background-color: #fff;
+    color: #004140;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    border-radius: 25px;
+    height: 48px;
+    width: 146px;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+button:active {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .car-container {
+        flex-direction: column;
+        max-width: 327px;
+    }
+    .sedan-box {
+        border-radius: 8px 8px 0 0;
+    }
+    .luxury-box {
+        border-radius: 0 0 8px 8px;
+    }
+    .main-text {
+        margin-bottom: 25px;
+    }
+}
